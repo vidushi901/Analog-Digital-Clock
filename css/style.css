@@ -1,0 +1,131 @@
+body{
+    background-color:black;
+}
+#container1{
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
+    border-radius: 10px;
+    height: 200px;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(116,116,116);
+    margin-bottom: 20%;
+    justify-items: center;
+    align-items: center;
+}
+.time{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:100px;
+    color: black;
+}
+.switch {
+    display: block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(61, 60, 60);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .container {
+    float:left;
+    margin-top:0px;
+    width:100%;
+    margin-bottom:9%;
+  }
+  #text1,#text2{
+      color:white;
+      font-style: italic;
+  }
+  #text2{
+      display:none;
+  }
+  #space{
+    height:20px;
+    background-color:black;
+    width:100%;
+    display:"block";
+  } 
+  #container2{
+    margin-left:30%;
+    width:450px;
+    height:450px;
+    margin-top: 8%;
+    position:relative;
+    background: url(../img/download_450x450.png) no-repeat;
+    background-size: 100%;
+    border-color: red;
+    border-width: 50px;
+    display:none;
+}
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 49.3%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 20%;
+    left: 49.4%;
+    opacity: 0.8;  
+
+
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 10%;
+    left: 50%;
+    opacity: 0.8; 
+    
+}

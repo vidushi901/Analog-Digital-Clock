@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color:white;
+}
+.container2{
+    margin-left:30%;
+    width:450px;
+    height:450px;
+    margin-top: 8%;
+    position:relative;
+    background: url(../img/download_450x450.png) no-repeat;
+    background-size: 100%;
+    border-color: red;
+    border-width: 50px;
+}
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 49.3%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 20%;
+    left: 49.4%;
+    opacity: 0.8;  
+
+
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 10%;
+    left: 50%;
+    opacity: 0.8; 
+    
+}
